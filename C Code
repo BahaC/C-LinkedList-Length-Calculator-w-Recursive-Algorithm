@@ -1,0 +1,26 @@
+  typedef struct _Node
+  {
+      int data;
+      struct _Node* next;
+
+  }Node;
+
+  Node* NodeA[3];
+
+  void NodeCounter(){
+
+      int x,i = 0;
+
+      do{
+          x++;
+      }
+      while(NodeA[i++]->next != NULL);
+      printf("Number of Node is: %d",x);
+
+  }
+
+  int main(){
+
+    NodeCounter();
+    return 0;
+  }
